@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { BrandMarquee } from "@/components/brand-marquee";
 
 export default function Home() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -137,8 +138,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Brand Marquee Section */}
+      <BrandMarquee />
+
       {/* Services Section */}
-      <section id="services" className="py-20 md:py-32 bg-white">
+      <section id="services" className="py-20 md:py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -150,21 +154,51 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: "Air Conditioner", icon: "❄️" },
-              { name: "Refrigerator", icon: "🧊" },
-              { name: "Washing Machine", icon: "🌊" },
-              { name: "Microwave", icon: "🍽️" },
-              { name: "Television", icon: "📺" },
-              { name: "Oven", icon: "🔥" },
-              { name: "Water Heater", icon: "💧" },
-              { name: "Dishwasher", icon: "🍴" },
+              {
+                name: "Air Conditioner",
+                icon: "❄️",
+                imgUrl: "/images/aircondition.png",
+              },
+              {
+                name: "Refrigerator",
+                icon: "🧊",
+                imgUrl: "/images/refrigerator.png",
+              },
+              {
+                name: "Washing Machine",
+                icon: "🌊",
+                imgUrl: "/images/washingmachine.png",
+              },
+              {
+                name: "Microwave",
+                icon: "🍽️",
+                imgUrl: "/images/microwaveoven.png",
+              },
+              { name: "Television", icon: "📺", imgUrl: "/images/tv.png" },
+              { name: "Oven", icon: "🔥", imgUrl: "/images/oven.png" },
+              { name: "Water Heater", icon: "💧", imgUrl: "/images/water.png" },
+              {
+                name: "Dishwasher",
+                icon: "🍴",
+                imgUrl: "/images/dishwasher.png",
+              },
             ].map((service) => (
               <div
                 key={service.name}
-                className="bg-secondary hover:bg-muted rounded-xl p-6 text-center transition-all hover:shadow-md cursor-pointer"
+                className="bg-secondary flex flex-col justify-end hover:bg-muted rounded-xl p-6 text-center transition-all hover:shadow-md cursor-pointer"
               >
-                <p className="text-4xl mb-3">{service.icon}</p>
-                <h3 className="font-semibold text-foreground">
+                {service.imgUrl ? (
+                  <Image
+                    src={service.imgUrl}
+                    width={100}
+                    height={100}
+                    className="mx-auto "
+                    alt="hindustancare"
+                  />
+                ) : (
+                  <p className="text-4xl mb-3">{service.icon}</p>
+                )}
+                <h3 className="font-semibold text-foreground mt-2">
                   {service.name}
                 </h3>
                 <p className="text-sm text-muted-foreground mt-2">
