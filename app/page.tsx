@@ -6,7 +6,7 @@ import {
   Clock,
   ChevronRight,
   Star,
-  BadgeCheck
+  BadgeCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -15,22 +15,23 @@ import { BrandMarquee } from "@/components/brand-marquee";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      
       {/* Hero Section */}
       <section className="bg-linear-to-b from-secondary to-background py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full">
               <span className="text-primary flex items-center gap-2 text-sm font-semibold">
-              <BadgeCheck /> Verified & Certified
+                <BadgeCheck /> Verified & Certified
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-              Trusted Home Appliance Repair Services
+              Trusted Home Appliance Repair Services <br />
+              in Ranchi
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance">
-              Certified technicians, same-day service, and transparent pricing.
-              Get your appliances fixed by experts you can trust.
+              Certified technicians providing same-day appliance repair in
+              Ranchi with transparent pricing. Get your appliances fixed by
+              experts you can trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button
@@ -38,10 +39,12 @@ export default function Home() {
                 asChild
                 className="bg-primary hover:bg-primary/90"
               >
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxUe06nbktS-tsgtbIo9NTuJ4bk8jAuiUdaW3DQ7RZm1AgGg/viewform?usp=header">Book Service Now</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxUe06nbktS-tsgtbIo9NTuJ4bk8jAuiUdaW3DQ7RZm1AgGg/viewform?usp=header">
+                  Book Service Now
+                </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="tel:+917488606493" className="flex items-center">
+                <a href="tel:+919117770110" className="flex items-center">
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
                 </a>
@@ -80,7 +83,8 @@ export default function Home() {
               Our Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Expert repair services for all major home appliances
+              Expert AC, refrigerator, washing machine & microwave repair
+              services across Ranchi.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -124,7 +128,7 @@ export default function Home() {
                     width={100}
                     height={100}
                     className="mx-auto "
-                    alt="hindustancare"
+                    alt={`${service.name} repair service in Ranchi`}
                   />
                 ) : (
                   <p className="text-4xl mb-3">{service.icon}</p>
@@ -138,6 +142,22 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* SEO SECTION */}
+      <section className="py-12 bg-white">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold mb-4">
+            Reliable Appliance Repair Near You in Ranchi
+          </h2>
+          <p className="text-muted-foreground">
+            Looking for trusted appliance repair near you in Ranchi? Hindustan
+            Care provides expert AC repair, washing machine repair, refrigerator
+            repair, microwave repair and more across all major areas of Ranchi,
+            Jharkhand. Our experienced technicians offer same-day doorstep
+            service with genuine spare parts and transparent pricing.
+          </p>
         </div>
       </section>
 
@@ -236,8 +256,8 @@ export default function Home() {
               },
               {
                 step: 4,
-                title: "Payment & Warranty",
-                desc: "1-year warranty on all repairs",
+                title: "Payment",
+                desc: "Hassle-free payment with service guarantee",
               },
             ].map((item, idx) => (
               <div key={idx} className="relative">
@@ -341,11 +361,11 @@ export default function Home() {
               className="bg-white text-primary hover:bg-secondary hover:text-primary border-white"
             >
               <a
-                href="tel:+917488606493"
+                href="tel:+919117770110"
                 className="flex items-center justify-center"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Call: +91-7488-606-493
+                Call: +91-9117-770-110
               </a>
             </Button>
             <Button
@@ -355,7 +375,7 @@ export default function Home() {
               className="bg-white text-primary hover:bg-secondary hover:text-primary border-white"
             >
               <a
-                href="https://wa.me/+917488606493"
+                href="https://wa.me/+919117770110"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
@@ -368,7 +388,7 @@ export default function Home() {
           <div className="grid sm:grid-cols-3 gap-6 text-center bg-primary-foreground/10 rounded-xl p-6">
             <div>
               <p className="text-2xl font-bold mb-2">Service Area</p>
-              <p>Ranchi, Bokaro & surrounding areas</p>
+              <p>Ranchi & Nearby Areas in Jharkhand</p>
             </div>
             <div>
               <p className="text-2xl font-bold mb-2">Hours</p>
@@ -381,7 +401,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

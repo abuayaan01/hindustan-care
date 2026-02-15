@@ -26,8 +26,8 @@ export default function WhyUsPage() {
     },
     {
       icon: Award,
-      title: '10+ Years Experience',
-      description: 'A decade of trusted service with thousands of satisfied customers across the region.'
+      title: '7+ Years Experience',
+      description: 'Delivering reliable repairs with hundreds of satisfied customers across the region.'
     },
     {
       icon: CheckCircle,

@@ -13,7 +13,7 @@ function Footer() {
           className="flex-1 bg-primary hover:bg-primary/90"
           asChild
         >
-          <a href="tel:+917488606493">
+          <a href="tel:+919117770110">
             <Phone className="w-4 h-4 mr-1" />
             Call Now
           </a>
@@ -25,7 +25,7 @@ function Footer() {
           asChild
         >
           <a
-            href="https://wa.me/+917488606493"
+            href="https://wa.me/+919117770110"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -92,18 +92,18 @@ function Footer() {
               <ul className="space-y-2 text-sm opacity-75">
                 <li>
                   <a
-                    href="tel:+917488606493"
+                    href="tel:+919117770110"
                     className="hover:opacity-100 transition"
                   >
-                    +91-7488-606-493
+                    +91-9117-770-110
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:info@hindustancare.in"
+                    href="mailto:hindustancare7@gmail.com"
                     className="hover:opacity-100 transition"
                   >
-                    info@hindustancare.in
+                    hindustancare7@gmail.com
                   </a>
                 </li>
                 <li>Ranchi, Jharkhand, India</li>
@@ -113,10 +113,16 @@ function Footer() {
           <div className="border-t border-white/10 pt-8 pb-6 flex flex-col md:flex-row justify-between items-center text-sm opacity-75">
             <p>&copy; 2024 Hindustan Care. All rights reserved.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <a href="/privacy-policy" className="hover:opacity-100 transition">
+              <a
+                href="/privacy-policy"
+                className="hover:opacity-100 transition"
+              >
                 Privacy Policy
               </a>
-              <a href="/terms-of-service" className="hover:opacity-100 transition">
+              <a
+                href="/terms-of-service"
+                className="hover:opacity-100 transition"
+              >
                 Terms of Service
               </a>
             </div>
