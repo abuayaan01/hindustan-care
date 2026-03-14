@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { BrandMarquee } from "@/components/brand-marquee";
+import ServicesSection from "@/components/service-links";
 
 export default function Home() {
   return (
@@ -401,6 +402,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Also Check */}
+      <ServicesSection />
     </div>
   );
 }
