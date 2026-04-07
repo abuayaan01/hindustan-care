@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { BrandMarquee } from "@/components/brand-marquee";
 import ServicesSection from "@/components/service-links";
+import BookButton from "@/components/ui/cta/book-button";
+import CallButton from "@/components/ui/cta/call-button";
 
 export default function Home() {
   return (
@@ -35,21 +37,8 @@ export default function Home() {
               experts you can trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button
-                size="lg"
-                asChild
-                className="bg-primary hover:bg-primary/90"
-              >
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxUe06nbktS-tsgtbIo9NTuJ4bk8jAuiUdaW3DQ7RZm1AgGg/viewform?usp=header">
-                  Book Service Now
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="tel:+919117770110" className="flex items-center">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </a>
-              </Button>
+              <BookButton />
+              <CallButton />
             </div>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
