@@ -1,7 +1,10 @@
+'use client';
+
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import { MessageCircle, Phone } from "lucide-react";
+import { fireCallConversion } from '@/lib/gtag'
 
 function Header() {
   return (
@@ -45,7 +48,10 @@ function Header() {
       </nav> */}
         <div className="hidden md:flex items-center gap-3">
           <Button variant="outline" size="sm" asChild>
-            <a href="tel:+919117770110">
+            <a
+              href="tel:+919117770110"
+              onClick={fireCallConversion}
+            >
               <Phone className="w-4 h-4 mr-2" />
               Call Now
             </a>
@@ -53,6 +59,7 @@ function Header() {
           <Button size="sm" asChild>
             <a
               href="https://wa.me/+919117770110"
+              onClick={fireCallConversion}
               target="_blank"
               rel="noopener noreferrer"
             >

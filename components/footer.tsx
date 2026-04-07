@@ -1,7 +1,9 @@
+'use client';
 import { MessageCircle, Phone, Zap } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { fireCallConversion } from "@/lib/gtag";
 
 function Footer() {
   return (
@@ -12,6 +14,7 @@ function Footer() {
           size="sm"
           className="flex-1 bg-primary hover:bg-primary/90"
           asChild
+          onClick={fireCallConversion}
         >
           <a href="tel:+919117770110">
             <Phone className="w-4 h-4 mr-1" />
@@ -23,6 +26,7 @@ function Footer() {
           variant="outline"
           className="flex-1 bg-transparent"
           asChild
+          onClick={fireCallConversion}
         >
           <a
             href="https://wa.me/+919117770110"

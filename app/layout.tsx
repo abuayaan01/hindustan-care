@@ -117,10 +117,11 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-ads-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
             gtag('js', new Date());
             gtag('config', 'AW-17927466366');
           `}
