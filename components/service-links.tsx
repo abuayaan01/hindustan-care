@@ -3,22 +3,22 @@ import Link from "next/link";
 export default function ServicesSection() {
   const services = [
     { name: "AC Repair in Ranchi", href: "/ranchi/ac-repair" },
-    {
-      name: "Refrigerator Repair in Ranchi",
-      href: "/ranchi/refrigerator-repair",
-    },
-    {
-      name: "Washing Machine Repair in Ranchi",
-      href: "/ranchi/washing-machine-repair",
-    },
-    {
-      name: "Microwave Oven Repair in Ranchi",
-      href: "/ranchi/microwave-repair",
-    },
-    { name: "RO Water Purifier Repair in Ranchi", href: "/ranchi/ro-repair" },
-    { name: "Geyser Repair in Ranchi", href: "/ranchi/geyser-repair" },
-    { name: "LED TV Repair in Ranchi", href: "/ranchi/tv-repair" },
-    { name: "Chimney Repair in Ranchi", href: "/ranchi/chimney-repair" },
+    // {
+    //   name: "Refrigerator Repair in Ranchi",
+    //   href: "/ranchi/refrigerator-repair",
+    // },
+    // {
+    //   name: "Washing Machine Repair in Ranchi",
+    //   href: "/ranchi/washing-machine-repair",
+    // },
+    // {
+    //   name: "Microwave Oven Repair in Ranchi",
+    //   href: "/ranchi/microwave-repair",
+    // },
+    // { name: "RO Water Purifier Repair in Ranchi", href: "/ranchi/ro-repair" },
+    // { name: "Geyser Repair in Ranchi", href: "/ranchi/geyser-repair" },
+    // { name: "LED TV Repair in Ranchi", href: "/ranchi/tv-repair" },
+    // { name: "Chimney Repair in Ranchi", href: "/ranchi/chimney-repair" },
   ];
 
   return (

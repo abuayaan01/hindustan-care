@@ -34,8 +34,8 @@ export default function ContactPage() {
       icon: Mail,
       title: "Email",
       description: "Send us your queries and we'll respond promptly.",
-      value: "hindustancare7@gmail.com",
-      action: "mailto:hindustancare7@gmail.com",
+      value: "support@hindustancare.in",
+      action: "mailto:support@hindustancare.in",
       label: "Send Email",
     },
     {
@@ -51,10 +51,10 @@ export default function ContactPage() {
   ];
 
   const businessHours = [
-    { day: "Monday - Friday", time: "8:00 AM - 10:00 PM" },
-    { day: "Saturday", time: "9:00 AM - 9:00 PM" },
-    { day: "Sunday", time: "9:00 AM - 9:00 PM" },
-    { day: "Holidays", time: "10:00 AM - 8:00 PM" },
+    { day: "Monday - Friday", time: "8:00 AM - 8:00 PM" },
+    { day: "Saturday", time: "8:00 AM - 8:00 PM" },
+    { day: "Sunday", time: "8:00 AM - 8:00 PM" },
+    { day: "Holidays", time: "8:00 AM - 8:00 PM" },
     { day: "Emergency", time: "24/7 Available" },
   ];
 
@@ -168,8 +168,7 @@ export default function ContactPage() {
                 Get Expert Service
               </h3>
               <p className="text-muted-foreground">
-                Our certified technician arrives and provides expert repair
-                services.
+                Our technician arrives and provides expert repair services.
               </p>
             </div>
           </div>
@@ -181,15 +180,15 @@ export default function ContactPage() {
             Service Areas
           </h2>
           <div className="bg-white rounded-lg border border-border p-12">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 text-center">
-              {["Ranchi", "Jamshedpur", "Raipur"].map((area) => (
+            <div className="text-center">
+              {["Ranchi", "Nearby Areas"].map((area) => (
                 <div key={area} className="flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-primary mr-2" />
                   <span className="font-semibold text-foreground">{area}</span>
                 </div>
               ))}
             </div>
-            <p className="text-center text-muted-foreground mt-8">
+            <p className="text-center text-muted-foreground mt-4">
               Not in our service area? Contact us anyway, we might be able to
               help!
             </p>

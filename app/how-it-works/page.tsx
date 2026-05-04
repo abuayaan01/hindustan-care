@@ -15,7 +15,7 @@ export default function HowItWorksPage() {
       number: 2,
       icon: Clock,
       title: 'Technician Arrives',
-      description: 'Our certified technician arrives at your doorstep with all necessary tools and equipment. They\'ll diagnose the problem and provide a quote.',
+      description: 'Our technician arrives at your doorstep with all necessary tools and equipment. They\'ll diagnose the problem and provide a quote.',
       details: ['Punctual arrival', 'Professional assessment', 'Transparent quote']
     },
     {

@@ -33,10 +33,10 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-foreground mb-4">
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
               Independent Service Provider
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text- leading-relaxed">
               Hindustan Care is an <b>independent</b> third-party repair service
               provider. We are{" "}
               <b>not authorized, affiliated, endorsed, or sponsored</b> by any
@@ -184,7 +184,7 @@ export default function TermsOfService() {
                   href="mailto:info@hindustancare.com"
                   className="text-primary hover:underline"
                 >
-                  hindustancare7@gmail.com
+                  support@hindustancare.in
                 </a>
               </li>
               <li>
@@ -193,7 +193,7 @@ export default function TermsOfService() {
                   href="tel:+919117770110"
                   className="text-primary hover:underline"
                 >
-                  +91-9117-770-110
+                  +91 9117770110
                 </a>
               </li>
               <li>Address: Ranchi, Jharkhand, India</li>

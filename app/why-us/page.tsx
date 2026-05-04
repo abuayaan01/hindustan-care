@@ -6,8 +6,8 @@ export default function WhyUsPage() {
   const reasons = [
     {
       icon: Users,
-      title: 'Certified Technicians',
-      description: 'All our technicians are certified, trained, and verified with years of experience in appliance repair.'
+      title: 'Experienced Technicians',
+      description: 'All our technicians are background verified with years of experience in appliance repair.'
     },
     {
       icon: Clock,

@@ -31,6 +31,17 @@ export default function PrivacyPolicy() {
               of personal data when you use our Service and the choices you have
               associated with that data.
             </p>
+
+            <section>
+              <p className="pt-4 leading-relaxed">
+                Hindustan Care is an <b>independent</b> third-party repair
+                service provider. We are{" "}
+                <b>not authorized, affiliated, endorsed, or sponsored</b> by any
+                appliance brands such as Samsung, LG, Whirlpool, or others. All
+                brand names and logos are used strictly for identification
+                purposes only.
+              </p>
+            </section>
           </section>
 
           <section>
@@ -127,7 +138,7 @@ export default function PrivacyPolicy() {
                   href="mailto:info@hindustancare.com"
                   className="text-primary hover:underline"
                 >
-                  hindustancare7@gmail.com
+                  support@hindustancare.in
                 </a>
               </li>
               <li>
@@ -136,7 +147,7 @@ export default function PrivacyPolicy() {
                   href="tel:+919117770110"
                   className="text-primary hover:underline"
                 >
-                  +91-9117-770-110
+                  +91 9117770110
                 </a>
               </li>
               <li>Address: Ranchi, Jharkhand, India</li>

@@ -24,7 +24,7 @@ export default function Home() {
           <div className="text-center">
             <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full">
               <span className="text-primary flex items-center gap-2 text-sm font-semibold">
-                <BadgeCheck /> Verified & Certified
+                <BadgeCheck /> Experienced Technicians
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
@@ -32,7 +32,7 @@ export default function Home() {
               in Ranchi
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance">
-              Certified technicians providing same-day appliance repair in
+              Experienced technicians providing same-day appliance repair in
               Ranchi with transparent pricing. Get your appliances fixed by
               experts you can trust.
             </p>
@@ -171,7 +171,7 @@ export default function Home() {
                 icon: Shield,
                 title: "Verified Technicians",
                 description:
-                  "All our technicians are certified and background-verified for your safety and peace of mind.",
+                  "All our technicians are experienced and background-verified for your safety and peace of mind.",
               },
               {
                 icon: Clock,
@@ -183,7 +183,7 @@ export default function Home() {
                 icon: Package,
                 title: "Genuine Spare Parts",
                 description:
-                  "We only use original and certified spare parts for all repairs.",
+                  "We only use original and genuine spare parts for all repairs.",
               },
               {
                 icon: Star,
@@ -355,7 +355,7 @@ export default function Home() {
                 className="flex items-center justify-center"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Call: +91-9117-770-110
+                Call: +91 9117770110
               </a>
             </Button>
             <Button
@@ -382,7 +382,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-2xl font-bold mb-2">Hours</p>
-              <p>Monday - Sunday, 6 AM - 11 PM</p>
+              <p>Monday - Sunday, 8 AM - 8 PM</p>
             </div>
             <div>
               <p className="text-2xl font-bold mb-2">Response Time</p>

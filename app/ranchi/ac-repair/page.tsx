@@ -414,7 +414,7 @@ export default function ACServiceRanchi() {
               AC Service & Repair in Ranchi, Jharkhand
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto text-balance">
-              Get expert AC repair and AC service in Ranchi from certified
+              Get expert AC repair and AC service in Ranchi from experienced
               technicians. We provide same-day AC service, maintenance,
               installation, and repair for all AC brands in Ranchi. Call our AC
               service center in Ranchi now for reliable AC solutions.
@@ -443,13 +443,13 @@ export default function ACServiceRanchi() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center">
-              <p className="text-3xl font-bold text-primary">500+</p>
+              <p className="text-3xl font-bold text-primary">100+</p>
               <p className="text-sm text-muted-foreground">
                 AC Service Reviews in Ranchi
               </p>
             </div>
             <div className="text-center">
-              <p className="text-3xl font-bold text-primary">4.8★</p>
+              <p className="text-3xl font-bold text-primary">5.0★</p>
               <p className="text-sm text-muted-foreground">
                 AC Repair Rating in Ranchi
               </p>
@@ -563,7 +563,7 @@ export default function ACServiceRanchi() {
 
         <p className="mb-4">
           If you are searching for professional AC repair in Ranchi, Hindustan
-          Care provides reliable AC service in Ranchi with certified AC
+          Care provides reliable AC service in Ranchi with experienced AC
           technicians. Our AC repair Ranchi services include split AC repair,
           window AC repair, inverter AC repair and commercial AC service in
           Ranchi.
@@ -594,11 +594,12 @@ export default function ACServiceRanchi() {
               <Shield className="w-6 h-6 text-primary shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold text-foreground mb-2">
-                  Certified AC Technicians
+                  Experienced AC Technicians
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  All our AC service professionals in Ranchi are certified and
-                  trained in AC repair and installation.
+                  All our AC service professionals in Ranchi are
+                  background-Verified and experienced in AC repair and
+                  installation.
                 </p>
               </div>
             </div>
@@ -745,7 +746,7 @@ export default function ACServiceRanchi() {
             </Button>
           </div>
 
-          <section className="py-20">
+          {/* <section className="py-20">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.0171724732613!2d85.31593977768493!3d23.35139240397305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7e5675b65b875df%3A0x9be161e925f32c30!2sHindustan%20Care%20-%20Appliance%20Repair%20Service!5e0!3m2!1sen!2sin!4v1773453773602!5m2!1sen!2sin"
               width="100%"
@@ -753,7 +754,7 @@ export default function ACServiceRanchi() {
               style={{ border: 0 }}
               loading="lazy"
             />
-          </section>
+          </section> */}
         </div>
       </section>
 

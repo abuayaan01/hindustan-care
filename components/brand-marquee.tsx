@@ -21,11 +21,13 @@ export function BrandMarquee() {
     <section className="py-12 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold">
-            Brands We Love Repairing
-          </h2>
-          <p className="text-muted-foreground">
-            Expert service for all leading appliance brands
+          <h2 className="text-2xl font-bold">Brands We Service</h2>
+          {/* <p className="text-muted-foreground">
+            Expert service for all leading appliance brands.
+          </p> */}
+          <p className="text-sm italic text-muted-foreground">
+            *Hindustan Care is an independent service provider and is not
+            affiliated with or authorized by any of the brands listed below.
           </p>
         </div>
 
@@ -67,7 +69,9 @@ function MarqueeRow({
       <div
         className="flex w-max gap-8"
         style={{
-          animation: `${reverse ? "marquee-reverse" : "marquee"} ${speed} linear infinite`,
+          animation: `${
+            reverse ? "marquee-reverse" : "marquee"
+          } ${speed} linear infinite`,
         }}
       >
         {/* FIRST SET */}

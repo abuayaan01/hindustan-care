@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { MessageCircle, Phone, Zap } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
@@ -86,8 +86,8 @@ function Footer() {
             <div>
               <h4 className="font-semibold mb-4">Business Hours</h4>
               <ul className="space-y-2 text-sm opacity-75">
-                <li>Mon - Fri: 6 AM - 11 PM</li>
-                <li>Sat - Sun: 6 AM - 11 PM</li>
+                <li>Mon - Fri: 8 AM - 8 PM</li>
+                <li>Sat - Sun: 8 AM - 8 PM</li>
                 <li>Emergency: 24/7</li>
               </ul>
             </div>
@@ -99,15 +99,15 @@ function Footer() {
                     href="tel:+919117770110"
                     className="hover:opacity-100 transition"
                   >
-                    +91-9117-770-110
+                    +91 9117770110
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:hindustancare7@gmail.com"
+                    href="mailto:support@hindustancare.in"
                     className="hover:opacity-100 transition"
                   >
-                    hindustancare7@gmail.com
+                    support@hindustancare.in
                   </a>
                 </li>
                 <li>Ranchi, Jharkhand, India</li>
