@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const phone = "+919117770110";
-const whatsapp = "https://wa.me/919117770110";
+const whatsapp = "https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance.";
 
 const serviceAreas = [
   "Kadru",

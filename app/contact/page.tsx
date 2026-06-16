@@ -26,7 +26,7 @@ export default function ContactPage() {
       title: "WhatsApp",
       description: "Chat with us on WhatsApp for quick responses.",
       value: "+91 9117-770-110",
-      action: "https://wa.me/919117770110",
+      action: "https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance.",
       label: "Message on WhatsApp",
       external: true,
     },

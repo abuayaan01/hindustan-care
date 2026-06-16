@@ -27,7 +27,7 @@ function CTASection() {
           asChild
         >
           <a
-            href="https://wa.me/+919117770110"
+            href="https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance."
             target="_blank"
             rel="noopener noreferrer"
           >

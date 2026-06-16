@@ -365,7 +365,7 @@ export default function Home() {
               className="bg-white text-primary hover:bg-secondary hover:text-primary border-white"
             >
               <a
-                href="https://wa.me/+919117770110"
+                href="https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"

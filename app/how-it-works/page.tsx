@@ -150,13 +150,13 @@ export default function HowItWorksPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90" asChild>
-              <a href="tel:+919876543210" className="flex items-center">
+              <a href="tel:+919117770110" className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </a>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent" asChild>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance." target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp Us
               </a>
