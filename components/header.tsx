@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, MessageCircle, Phone, X } from "lucide-react";
 import { fireCallConversion } from "@/lib/gtag";
+import FadeIn from "./animations/fade-in";
 
 const LINKS = [
   { name: "Contact Us", link: "./contact" },
@@ -16,21 +17,25 @@ const LINKS = [
 function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-border">
+    <header className="absolute flex justify-around w-full top-0 z-50 bg-whites border-b border-border">
       <div
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between
+        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between
       flex-wrap p-4"
       >
-        <a href="/" className="flex items-center">
-          <Image
-            alt="hindustan-care"
-            width={35}
-            height={35}
-            className="mr-2 logo bg-primary rounded-lg"
-            src={"/hindustan-care-logo.png"}
-          />
-          <span className="text-xl font-bold text-primary">Hindustan Care</span>
-        </a>
+        <FadeIn delay={0.3}>
+          <a href="/" className="flex items-center">
+            <Image
+              alt="hindustan-care"
+              width={35}
+              height={35}
+              className="mr-2 logo bg-primary rounded-lg"
+              src={"/hindustan-care-logo.png"}
+            />
+            <span className="text-xl font-bold text-primary">
+              Hindustan Care
+            </span>
+          </a>
+        </FadeIn>
 
         {/* Mobile Hamburger Menu Button */}
         <button
@@ -97,25 +102,32 @@ function Header() {
           </div>
         )}
 
-        <div className="hidden md:flex items-center gap-3">
-          <Button variant="outline" size="sm" asChild>
+        <FadeIn delay={0.5} className="hidden md:flex">
+          <div className="hidden md:flex items-center gap-3">
+            {/* <Button variant="outline" size="sm" asChild>
             <a href="tel:+919117770110" onClick={fireCallConversion}>
               <Phone className="w-4 h-4 mr-2" />
               Call Now
             </a>
-          </Button>
-          <Button size="sm" asChild>
-            <a
-              href="https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance."
-              onClick={fireCallConversion}
-              target="_blank"
-              rel="noopener noreferrer"
+          </Button> */}
+            <Button
+              variant={"whatsapp"}
+              size="lg"
+              className="rounded-full"
+              asChild
             >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              WhatsApp
-            </a>
-          </Button>
-        </div>
+              <a
+                href="https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance."
+                onClick={fireCallConversion}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp
+              </a>
+            </Button>
+          </div>
+        </FadeIn>
       </div>
     </header>
   );

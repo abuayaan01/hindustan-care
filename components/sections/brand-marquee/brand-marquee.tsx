@@ -16,7 +16,7 @@ const brandLogos = [
   "Fujitsu-Logo.wine.svg",
 ];
 
-export function BrandMarquee() {
+export default function BrandMarquee() {
   return (
     <section className="py-12 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
@@ -105,8 +105,8 @@ function BrandCard({ logo }: { logo: string }) {
 function FadeEdges() {
   return (
     <>
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-10" />
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-10" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-linear-to-r from-white to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-linear-to-l from-white to-transparent z-10" />
     </>
   );
 }

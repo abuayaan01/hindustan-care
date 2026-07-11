@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ServicesSection() {
+export default function ServicesLink() {
   const services = [
     { name: "AC Repair in Ranchi", href: "/ranchi/ac-repair" },
     // {
