@@ -2,25 +2,42 @@
 
 import { Button } from "../button";
 import { fireCallConversion } from "@/lib/gtag";
-import { Phone } from "lucide-react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ChevronRight, Phone } from "lucide-react";
+import { useRef } from "react";
 
 function CallButton() {
+  const ref = useRef(null);
+
+  useGSAP(() => {
+    gsap.to(ref.current, {
+      x: 5,
+      duration: 0.5,
+      repeat: -1,
+      yoyo: true,
+      yoyoEase: true,
+    });
+  }, []);
+
   return (
     <Button
       asChild
       variant={"call"}
       size="lg"
       onClick={fireCallConversion}
-      className="group relative h-12 overflow-hidden rounded-full p-1"
+      className="group relative h-12! w-full overflow-hidden rounded-full"
     >
       <a
         href="tel:+919117770110"
-        className="relative flex h-full items-center justify-between pl-5 pr-1"
+        className="relative flex h-full items-center justify-between"
       >
         {/* Expanding Background */}
         <span
           className="
             absolute
+            hidden
+            md:inline-block
             right-1
             top-1
             bottom-1
@@ -31,31 +48,48 @@ function CallButton() {
             transition-width
             duration-200
             ease-[cubic-bezier(0.22,1,0.36,1)]
-            group-hover:w-35
+            group-hover:w-[calc(100%-9px)]
           "
         />
+
+        {/* Smaler Screen */}
+        <span className="md:hidden">
+          <Phone />
+        </span>
+        {/* Smaler Screen end*/}
 
         {/* Text */}
         <span
           className="
             relative
+            mr-0
+            md:mr-8
             z-10
             text-sm
             font-semibold
             tracking-wide
             transition-colors
             duration-300
+            uppercase
           "
         >
-          CALL NOW
+          Call Now
+        </span>
+
+        {/* Smaller screen icon */}
+        <span ref={ref} className="md:hidden">
+          <ChevronRight />
         </span>
 
         {/* Icon Circle */}
         <span
           className="
-            relative
+            absolute
+            right-1
+            top-1
+            hidden
+            md:flex
             z-20
-            flex
             h-10
             w-10
             items-center

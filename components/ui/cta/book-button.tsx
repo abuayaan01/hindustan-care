@@ -8,7 +8,7 @@ function BookButton() {
     <Button
       size="lg"
       asChild
-      className="bg-slate-700/50 h-12 text-accent rounded-full hover:bg-primary p-1"
+      className="bg-slate-700/50 h-12 w-full text-accent rounded-full hover:bg-primary p-1"
       onClick={fireCallConversion}
     >
       <a

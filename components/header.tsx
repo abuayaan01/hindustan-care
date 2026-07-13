@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { Menu, MessageCircle, Phone, X } from "lucide-react";
 import { fireCallConversion } from "@/lib/gtag";
 import FadeIn from "./animations/fade-in";
+import Whatsapp from "./../public/images/icons/whatsapp.svg"
 
 const LINKS = [
   { name: "Contact Us", link: "./contact" },
@@ -17,7 +18,7 @@ const LINKS = [
 function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="absolute flex justify-around w-full top-0 z-50 bg-whites border-b border-border">
+    <header className="absolute flex justify-around w-full top-0 z-50 bg-whites">
       <div
         className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between
       flex-wrap p-4"
@@ -104,12 +105,6 @@ function Header() {
 
         <FadeIn delay={0.5} className="hidden md:flex">
           <div className="hidden md:flex items-center gap-3">
-            {/* <Button variant="outline" size="sm" asChild>
-            <a href="tel:+919117770110" onClick={fireCallConversion}>
-              <Phone className="w-4 h-4 mr-2" />
-              Call Now
-            </a>
-          </Button> */}
             <Button
               variant={"whatsapp"}
               size="lg"
@@ -122,7 +117,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="w-4 h-4" />
+                <Image alt="hindustan_care_contact" className="w-5 h-5" src={Whatsapp} />
                 WhatsApp
               </a>
             </Button>

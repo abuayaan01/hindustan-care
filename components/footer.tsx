@@ -12,7 +12,7 @@ function Footer() {
       <div className="md:hidden z-10 fixed bottom-0 left-0 right-0 bg-white border-t border-border p-3 flex gap-3">
         <Button
           size="sm"
-          className="flex-1 bg-primary hover:bg-primary/90"
+          className="flex-1 bg-primary hover:bg-primary/90 rounded-full"
           asChild
           onClick={fireCallConversion}
         >
@@ -24,7 +24,7 @@ function Footer() {
         <Button
           size="sm"
           variant="outline"
-          className="flex-1 bg-transparent"
+          className="flex-1 bg-transparent rounded-full"
           asChild
           onClick={fireCallConversion}
         >
