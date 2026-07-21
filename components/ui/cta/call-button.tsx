@@ -26,7 +26,7 @@ function CallButton() {
       variant={"call"}
       size="lg"
       onClick={fireCallConversion}
-      className="group relative h-12! w-full overflow-hidden rounded-full"
+      className="group relative h-10! md:h-12! w-90 md:w-full overflow-hidden rounded-full"
     >
       <a
         href="tel:+919117770110"
@@ -70,7 +70,6 @@ function CallButton() {
             tracking-wide
             transition-colors
             duration-300
-            uppercase
           "
         >
           Call Now

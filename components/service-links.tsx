@@ -22,7 +22,7 @@ export default function ServicesLink() {
   ];
 
   return (
-    <section className="pt-12 bg-gray-50 text-center">
+    <section className="pt-12 text-center">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl font-semibold mb-6 text-gray-800">
           Also Explore Our Services

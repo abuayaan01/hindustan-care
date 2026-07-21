@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import SplitText from "@/components/animations/split-text";
+import FadeIn from "@/components/animations/fade-in";
+import Reveal from "@/components/animations/reveal";
 
 const brandLogos = [
   "Bosch_Logo.svg",
@@ -14,28 +17,31 @@ const brandLogos = [
   "samsung.svg",
   "Whirlpool_Corporation.svg",
   "Fujitsu-Logo.wine.svg",
+  // "Fujitsu-Logo.wine.cropped.svg",
 ];
 
 export default function BrandMarquee() {
   return (
-    <section className="py-12 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-20 md:py-32 bg-white overflow-hidden">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold">Brands We Service</h2>
-          {/* <p className="text-muted-foreground">
-            Expert service for all leading appliance brands.
-          </p> */}
-          <p className="text-sm italic text-muted-foreground">
+          <SplitText className="text-center text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Brands We Service
+          </SplitText>
+
+          <FadeIn delay={0.1} className="text-sm italic text-muted-foreground">
             *Hindustan Care is an independent service provider and is not
             affiliated with or authorized by any of the brands listed below.
-          </p>
+          </FadeIn>
         </div>
 
-        {/* ROW 1 */}
-        <MarqueeRow logos={brandLogos} speed="45s" />
+        <Reveal delay={0.2}>
+          {/* ROW 1 */}
+          <MarqueeRow logos={brandLogos} speed="45s" />
 
-        {/* ROW 2 (reverse) */}
-        <MarqueeRow logos={[...brandLogos].reverse()} speed="45s" reverse />
+          {/* ROW 2 (reverse) */}
+          <MarqueeRow logos={[...brandLogos].reverse()} speed="45s" reverse />
+        </Reveal>
       </div>
 
       <style>{`

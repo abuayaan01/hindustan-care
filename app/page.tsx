@@ -7,10 +7,11 @@ import ServiceSection from "@/components/sections/services/service-section";
 import Testimonials from "@/components/sections/testimonials/testimonials";
 import WhyUs from "@/components/sections/why-us/why-us";
 import ServicesLink from "@/components/service-links";
+import Services from "@/components/ui/services/services";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection />
 
@@ -18,10 +19,11 @@ export default function Home() {
       <BrandMarquee />
 
       {/* Services Section */}
-      <ServiceSection />
+      {/* <ServiceSection /> */}
+      <Services />
 
       {/* SEO SECTION */}
-      <SeoSection />
+      {/* <SeoSection /> */}
 
       {/* Why Choose Us Section */}
       <WhyUs />

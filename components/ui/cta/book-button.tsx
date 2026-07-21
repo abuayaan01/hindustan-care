@@ -8,7 +8,7 @@ function BookButton() {
     <Button
       size="lg"
       asChild
-      className="bg-slate-700/50 h-12 w-full text-accent rounded-full hover:bg-primary p-1"
+      className="bg-slate-700/50 h-10 md:h-12 w-90 md:w-full text-accent rounded-full hover:bg-primary"
       onClick={fireCallConversion}
     >
       <a
@@ -17,7 +17,7 @@ function BookButton() {
       >
         <CalendarDays />
         <div>
-          <p>BOOK SERVICE NOW</p>
+          <p>Book Service Now</p>
         </div>
         <ChevronRight />
       </a>

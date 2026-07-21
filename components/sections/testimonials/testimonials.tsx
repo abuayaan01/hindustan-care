@@ -1,3 +1,6 @@
+import FadeIn from "@/components/animations/fade-in";
+import Reveal from "@/components/animations/reveal";
+import SplitText from "@/components/animations/split-text";
 import { Star } from "lucide-react";
 
 function Testimonials() {
@@ -5,13 +8,14 @@ function Testimonials() {
     <section className="py-20 md:py-32 bg-linear-to-b from-secondary to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <SplitText delay={0.1} className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Customer Testimonials
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          </SplitText>
+          <FadeIn delay={0.2} className="text-lg text-muted-foreground max-w-2xl mx-auto">
             See what our happy customers say about us
-          </p>
+          </FadeIn>
         </div>
+        <Reveal delay={0.23}>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
@@ -38,7 +42,7 @@ function Testimonials() {
           ].map((testimonial, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl p-6 border border-border hover:border-primary/30 transition"
+              className={`bg-white rounded-xl p-6 ${idx == 1 && "md:shadow-xl"}  hover:border hover:border-primary/30 transition`}
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -57,6 +61,7 @@ function Testimonials() {
             </div>
           ))}
         </div>
+        </Reveal>
       </div>
     </section>
   );

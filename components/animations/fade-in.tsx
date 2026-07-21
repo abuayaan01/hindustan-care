@@ -36,6 +36,12 @@ export default function FadeIn({
       filter: `blur(${blur}px)`,
       ease: "power3.out",
       clearProps: "all",
+
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "top 85%",
+        once: true,
+      },
     });
   }, []);
 

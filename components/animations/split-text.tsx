@@ -29,6 +29,12 @@ export default function SplitText({
       duration: 0.8,
       delay,
       ease: "power4.out",
+
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "top 80%",
+        once: true,
+      },
     });
 
     return () => split.revert();

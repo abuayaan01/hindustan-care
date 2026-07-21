@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { Menu, MessageCircle, Phone, X } from "lucide-react";
 import { fireCallConversion } from "@/lib/gtag";
 import FadeIn from "./animations/fade-in";
-import Whatsapp from "./../public/images/icons/whatsapp.svg"
+import Whatsapp from "./../public/images/icons/whatsapp-white.svg"
 
 const LINKS = [
   { name: "Contact Us", link: "./contact" },
@@ -52,7 +52,7 @@ function Header() {
         </button>
 
         {isOpen && (
-          <div className="md:hidden w-full border-t mt-4 border-border bg-linear-to-b from-white to-secondary/50 rounded-3xl animate-in slide-in-from-top-2 duration-300">
+          <div className="md:hidden w-full mt-4 border-b-2 bg-linear-to-b bg-white rounded-3xl animate-in slide-in-from-top-2 duration-300">
             <div className="px-4 sm:px-6 py-6 max-w-7xl mx-auto">
               <nav className="flex flex-col gap-1 mb-8">
                 {LINKS.map((link) => {
@@ -94,7 +94,7 @@ function Header() {
                     onClick={fireCallConversion}
                     className="flex items-center justify-center"
                   >
-                    <MessageCircle className="w-4 h-4 mr-2" />
+                    <Image src={Whatsapp} alt="hindustan-care-whatsapp-support" className="w-5 h-5" />
                     WhatsApp Now
                   </a>
                 </Button>
@@ -108,7 +108,7 @@ function Header() {
             <Button
               variant={"whatsapp"}
               size="lg"
-              className="rounded-full"
+              className="rounded-full bg-[#25D366] text-white"
               asChild
             >
               <a

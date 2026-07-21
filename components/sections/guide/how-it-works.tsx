@@ -1,3 +1,6 @@
+import FadeIn from "@/components/animations/fade-in";
+import Reveal from "@/components/animations/reveal";
+import SplitText from "@/components/animations/split-text";
 import { ChevronRight } from "lucide-react";
 
 function HowItWorks() {
@@ -6,13 +9,15 @@ function HowItWorks() {
       <section id="how-it-works" className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <SplitText delay={0.1} className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               How It Works
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            </SplitText>
+            <FadeIn delay={0.2} className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Simple 4-step process to get your appliances fixed
-            </p>
+            </FadeIn>
           </div>
+
+          <Reveal delay={0.23}>
           <div className="grid md:grid-cols-4 gap-6">
             {[
               {
@@ -54,6 +59,7 @@ function HowItWorks() {
               </div>
             ))}
           </div>
+          </Reveal>
         </div>
       </section>
     </div>
