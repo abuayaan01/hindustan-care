@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, MessageCircle, Phone, X } from "lucide-react";
 import { fireCallConversion } from "@/lib/gtag";
+import FadeIn from "./animations/fade-in";
+import Whatsapp from "./../public/images/icons/whatsapp-white.svg"
 
 const LINKS = [
   { name: "Contact Us", link: "./contact" },
@@ -16,21 +18,25 @@ const LINKS = [
 function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-border">
+    <header className="absolute flex justify-around w-full top-0 z-50 bg-whites">
       <div
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between
+        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between
       flex-wrap p-4"
       >
-        <a href="/" className="flex items-center">
-          <Image
-            alt="hindustan-care"
-            width={35}
-            height={35}
-            className="mr-2 logo bg-primary rounded-lg"
-            src={"/hindustan-care-logo.png"}
-          />
-          <span className="text-xl font-bold text-primary">Hindustan Care</span>
-        </a>
+        <FadeIn delay={0.3}>
+          <a href="/" className="flex items-center">
+            <Image
+              alt="hindustan-care"
+              width={35}
+              height={35}
+              className="mr-2 logo bg-primary rounded-lg"
+              src={"/hindustan-care-logo.png"}
+            />
+            <span className="text-xl font-bold text-primary">
+              Hindustan Care
+            </span>
+          </a>
+        </FadeIn>
 
         {/* Mobile Hamburger Menu Button */}
         <button
@@ -46,7 +52,7 @@ function Header() {
         </button>
 
         {isOpen && (
-          <div className="md:hidden w-full border-t mt-4 border-border bg-linear-to-b from-white to-secondary/50 rounded-3xl animate-in slide-in-from-top-2 duration-300">
+          <div className="md:hidden w-full mt-4 border-b-2 bg-linear-to-b bg-white rounded-3xl animate-in slide-in-from-top-2 duration-300">
             <div className="px-4 sm:px-6 py-6 max-w-7xl mx-auto">
               <nav className="flex flex-col gap-1 mb-8">
                 {LINKS.map((link) => {
@@ -88,7 +94,7 @@ function Header() {
                     onClick={fireCallConversion}
                     className="flex items-center justify-center"
                   >
-                    <MessageCircle className="w-4 h-4 mr-2" />
+                    <Image src={Whatsapp} alt="hindustan-care-whatsapp-support" className="w-5 h-5" />
                     WhatsApp Now
                   </a>
                 </Button>
@@ -97,25 +103,26 @@ function Header() {
           </div>
         )}
 
-        <div className="hidden md:flex items-center gap-3">
-          <Button variant="outline" size="sm" asChild>
-            <a href="tel:+919117770110" onClick={fireCallConversion}>
-              <Phone className="w-4 h-4 mr-2" />
-              Call Now
-            </a>
-          </Button>
-          <Button size="sm" asChild>
-            <a
-              href="https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance."
-              onClick={fireCallConversion}
-              target="_blank"
-              rel="noopener noreferrer"
+        <FadeIn delay={0.5} className="hidden md:flex">
+          <div className="hidden md:flex items-center gap-3">
+            <Button
+              variant={"whatsapp"}
+              size="lg"
+              className="rounded-full bg-[#25D366] text-white"
+              asChild
             >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              WhatsApp
-            </a>
-          </Button>
-        </div>
+              <a
+                href="https://wa.me/919117770110?text=Hi%20Hindustan%20Care%2C%20I%20need%20assistance."
+                onClick={fireCallConversion}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image alt="hindustan_care_contact" className="w-5 h-5" src={Whatsapp} />
+                WhatsApp
+              </a>
+            </Button>
+          </div>
+        </FadeIn>
       </div>
     </header>
   );

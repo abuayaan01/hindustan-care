@@ -82,7 +82,7 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {/* Header */}
         <Header />
-        {children}
+        <div className="mt-16">{children}</div>
         {/* Footer */}
         <Footer />
         {/* Structured Data */}
@@ -128,7 +128,7 @@ export default function RootLayout({
         </Script>
 
         {/* Microsodt Clarity */}
-         <Script
+        <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
