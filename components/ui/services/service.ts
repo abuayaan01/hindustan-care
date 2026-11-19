@@ -8,11 +8,11 @@ export type Service = {
 
 export const rowOne: Service[] = [
   {
-    id: "ac",
-    title: "Air Conditioner",
+    id: "geyser",
+    title: "Geyser",
     description:
-      "Professional AC repair, installation and maintenance by experienced technicians.",
-    image: "/images/appliances/ac.png",
+      "Professional geyser repair, installation and maintenance by experienced technicians.",
+    image: "/images/appliances/gyeser.png",
     glow: "#3B82F6",
   },
   {

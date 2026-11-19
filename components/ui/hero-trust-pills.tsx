@@ -12,7 +12,6 @@ import {
   AvatarGroupCount,
 } from "@/components/ui/avatar";
 
-
 export default function HeroRating() {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -51,7 +50,10 @@ export default function HeroRating() {
   }, []);
 
   return (
-    <FadeIn className="flex flex-col items-center justify-center gap-2 mt-10" delay={1.2}>
+    <FadeIn
+      className="flex flex-col items-center justify-center gap-2 mt-10"
+      delay={1.2}
+    >
       <div>
         <AvatarGroup />
       </div>
@@ -100,18 +102,16 @@ export function AvatarGroup() {
       </Avatar>
 
       <Avatar className={`${avatarStyleClass}`}>
+        <AvatarImage src="/images/rated-users/sami.png" />
+        <AvatarFallback>DA</AvatarFallback>
+      </Avatar>
+      
+      <Avatar className={`${avatarStyleClass}`}>
         <AvatarImage src="/images/rated-users/abuzar.png" />
         <AvatarFallback>AB</AvatarFallback>
       </Avatar>
 
-      <Avatar className={`${avatarStyleClass}`}>
-        <AvatarImage src="/images/rated-users/danish.png" />
-        <AvatarFallback>DA</AvatarFallback>
-      </Avatar>
-
-      <AvatarGroupCount
-        className={`${avatarStyleClass} text-xs`}
-      >
+      <AvatarGroupCount className={`${avatarStyleClass} text-xs`}>
         1K+
       </AvatarGroupCount>
     </div>
